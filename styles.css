@@ -1,4 +1,200 @@
 
 body {
-    background-image: url(assets/ancient_forest.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/breathtaking_mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.top_bar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: aliceblue;
+    padding-left: 40px;
+}
+
+.quote {
+    font-family: 'Manrope', sans-serif;
+    text-align: right;
+    color: aliceblue;
+    padding-right: 40px;
+}
+
+.main_container {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 90px;
+}
+
+.main {
+    width: fit-content;
+    height: fit-content;
+}
+
+.question {
+    background-color: rgb(0, 0, 0, 0.25);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.timers_container {
+    text-align: center;
+}
+
+.timer {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.timers_btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn_1 {
+    color: rgb(240, 248, 255, 0.65);
+}
+.btn_1:hover {
+    color: aliceblue;
+}
+
+.btn_2 {
+    color: rgb(240, 248, 255, 0.65);
+}
+.btn_2:hover {
+    color: aliceblue;
+}
+
+.btn_3 {
+    color: rgb(240, 248, 255, 0.65);
+}
+.btn_3:hover {
+    color: aliceblue;
+}
+
+.cntrl_btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.play_btn {
+    padding: 7px;
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.play_btn:hover {
+    padding: 7px;
+    background-color: rgba(74, 74, 74, 0.25);
+    border-radius: 5px;
+}
+
+.replay_btn {
+    padding: 7px;
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.replay_btn:hover {
+    padding: 7px;
+    background-color: rgba(74, 74, 74, 0.25);
+    border-radius: 5px;
+}
+
+.bottom_bar {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left_btns {
+    margin: 10px;
+}
+
+.sound_btn {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.35);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.sound_btn:hover {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgba(105, 105, 105, 0.35);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.tasks_btn {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.35);
+    border-radius: 4px;
+}
+
+.tasks_btn:hover {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgba(105, 105, 105, 0.35);
+    border-radius: 4px;
+}
+
+.right_btns {
+    margin: 10px;
+}
+
+.theme_btn {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.35);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.theme_btn:hover {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgba(105, 105, 105, 0.35);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.settings_btn {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.35);
+    border-radius: 4px;
+}
+
+.settings_btn:hover {
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgba(105, 105, 105, 0.35);
+    border-radius: 4px;
 }
