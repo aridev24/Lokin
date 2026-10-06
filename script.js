@@ -141,9 +141,74 @@ reset_btn.addEventListener("click", function(){
         is_running = false
     }
 }) 
+
 const task_input = document.getElementById("task_input_id")
 const add_task = document.getElementById("add_task_btn_id")
 const task_list = document.getElementById("task_list_id")
+
+
+const savedTasks = localStorage.getItem("tasks")
+let loadedTasks = ""
+let tasks = []
+
+if(savedTasks != null) {
+    loadedTasks = JSON.parse(savedTasks)
+    tasks = loadedTasks
+
+    for(let [index, task] of tasks.entries()){
+
+        const new_task = document.createElement("div")
+        new_task.className = "task"
+
+        const new_checkbox = document.createElement("input")
+        new_checkbox.className = "checkbox"
+        new_checkbox.type = "checkbox"
+
+        const new_task_text = document.createElement("p")
+        new_task_text.className = "task_text"
+
+        if(task.completed === true){
+            new_checkbox.checked = true
+            new_task_text.style.textDecoration = "line-through";
+        }
+        else{
+            new_checkbox.checked = false
+            new_task_text.style.textDecoration = "none";
+        }
+
+
+        new_checkbox.addEventListener("change", function () {
+            if (new_checkbox.checked) {
+                new_task_text.style.textDecoration = "line-through";
+                task.completed = true
+                localStorage.setItem("tasks", JSON.stringify(tasks))
+            }
+            else {
+                new_task_text.style.textDecoration = "none";
+                task.completed = false
+                localStorage.setItem("tasks", JSON.stringify(tasks))
+            }
+        })
+
+        const task_del_btn = document.createElement("div")
+        task_del_btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16"><path d="M2.5 1a1 1 0 0 0-1 1v1a2 2 0 0 1-2 2H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1 1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/></svg>`
+        task_del_btn.className = "del_btn"
+
+        task_del_btn.addEventListener("click", function() {
+            task_list.removeChild(new_task)
+            tasks.splice(index, 1)
+            localStorage.setItem("tasks", JSON.stringify(tasks))
+
+        })
+
+        new_task.appendChild(new_checkbox)
+        new_task.appendChild(new_task_text)
+        new_task.appendChild(task_del_btn)
+        task_list.appendChild(new_task)
+
+        new_task_text.textContent = task.text
+    }
+}
 
 
 function addingTask() {
@@ -151,6 +216,11 @@ function addingTask() {
         return
     }
     else{
+
+        let text = task_input.value
+        let completed = false
+        let task = {text, completed}
+
         const new_task = document.createElement("div")
         new_task.className = "task"
 
@@ -164,9 +234,13 @@ function addingTask() {
         new_checkbox.addEventListener("change", function () {
             if (new_checkbox.checked) {
                 new_task_text.style.textDecoration = "line-through";
+                task.completed = true
+                localStorage.setItem("tasks", JSON.stringify(tasks))
             }
             else {
                 new_task_text.style.textDecoration = "none";
+                task.completed = false
+                localStorage.setItem("tasks", JSON.stringify(tasks))
             }
         })
 
@@ -176,6 +250,8 @@ function addingTask() {
 
         task_del_btn.addEventListener("click", function() {
             task_list.removeChild(new_task)
+            tasks.splice(tasks.indexOf(task), 1)
+            localStorage.setItem("tasks", JSON.stringify(tasks))
         })
 
         new_task.appendChild(new_checkbox)
@@ -184,6 +260,11 @@ function addingTask() {
         task_list.appendChild(new_task)
 
         new_task_text.textContent = task_input.value
+
+
+        tasks.push(task)
+
+        localStorage.setItem("tasks", JSON.stringify(tasks))
 
         task_input.value = ""
     }
@@ -201,3 +282,94 @@ task_input.addEventListener("keydown", function(event) {
     }
 })
 
+const task_panel = document.getElementById("task_panel")
+const task_btn = document.getElementById("task_btn")
+
+
+task_btn.addEventListener("click", function() {
+    task_panel.classList.toggle("show")
+
+})
+
+
+const theme1 = document.getElementById("theme1")
+const theme2 = document.getElementById("theme2")
+const theme3 = document.getElementById("theme3")
+const theme4 = document.getElementById("theme4")
+const theme5 = document.getElementById("theme5")
+const theme6 = document.getElementById("theme6")
+const theme7 = document.getElementById("theme7")
+const theme8 = document.getElementById("theme8")
+const theme9 = document.getElementById("theme9")
+const theme10 = document.getElementById("theme10")
+const theme11 = document.getElementById("theme11")
+const theme12 = document.getElementById("theme12")
+const theme13 = document.getElementById("theme13")
+const theme14 = document.getElementById("theme14")
+
+
+const body = document.getElementById("body")
+
+
+theme1.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/ancient_forest.jpg)"
+})
+
+theme2.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/autumn.jpg)"
+})
+
+theme3.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/beautiful_moonlit.jpg)"
+})
+
+theme4.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/breathtaking_mountain.jpg)"
+})
+
+theme5.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/city_at_midnight.jpg)"
+})
+
+theme6.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/cliffs_overlooking.jpg)"
+})
+
+theme7.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/countryside_during_spring.jpg)"
+})
+
+theme8.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/lucid-origin_Cinematic_anime_landscape_of_a_peaceful_Japanese-inspired_city_street_at_night_d-0.jpg)"
+})
+
+theme9.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/mountain-valley.jpg)"
+})
+
+theme10.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/night-mountain-lake.jpg)"
+})
+
+theme11.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/lucid-origin_Cinemocean_at_sunset.jpg)"
+})
+
+theme12.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/snowy_mountain.jpg)"
+})
+
+theme13.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/valley_at_night.jpg)"
+})
+
+theme14.addEventListener("click", function() {
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/wheat_fields.jpg)"
+})
+
+const theme_btn = document.getElementById("theme_btn")
+const theme_panel = document.getElementById("theme_panel")
+
+theme_btn.addEventListener("click", function() {
+    theme_panel.classList.toggle("show")
+})

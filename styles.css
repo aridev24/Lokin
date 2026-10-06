@@ -1,7 +1,6 @@
 
-body {
+#body {
     background-image:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/breathtaking_mountain.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
@@ -217,11 +216,23 @@ body {
     position: fixed;
     left: 0;
     bottom: 0;
-    margin: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
     border-radius: 10px;
     border: solid 0.4px rgb(29, 44, 62);
     font-family: 'Manrope', sans-serif;
 }
+
+
+#task_panel {
+    display: none;
+}
+
+#task_panel.show {
+    display: block;
+}
+
+
 
 .task_heading_container {
     width: 100%;
@@ -307,5 +318,75 @@ body {
 }
 
 
+.themes_container {
+    width: fit-content;
+    height: 300px;
+    background-color: rgb(5, 15, 27, 0.8);
+    color: aliceblue;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: solid 0.4px rgb(29, 44, 62);
+    font-family: 'Manrope', sans-serif;
+}
+
+#theme_panel {
+    display: none;
+}
+
+#theme_panel.show {
+    display: block;
+}
+
+
+.themes_heading_container {
+    width: 100%;
+    height: fit-content;
+}
+
+.themes_heading {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    line-height: 0;
+}
+
+.themes_selector {
+    width: 100%;
+    height: 250px;
+    border: solid 0.4px rgb(53, 68, 86);
+    overflow-y: auto;
+}
+
+.themes_row {
+    width: 320px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    gap: 5px;
+}
+
+.theme_1 {
+    width: 150px;
+    height: 80px;
+    border: solid 0.4px rgb(53, 68, 86);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.theme_2 {
+    width: 150px;
+    height: 80px;
+    border: solid 0.4px rgb(53, 68, 86);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /*<div class="task"<input type="checkbox" class="checkbox"><p class=task_text></p></div>*/
