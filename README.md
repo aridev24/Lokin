@@ -53,4 +53,3 @@ As this is not the final version so there will be many new updates including:
 ## License
 
 This project is licensed under the MIT License.
-
