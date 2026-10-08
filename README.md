@@ -16,8 +16,8 @@ Lokin is a beautiful and modern workspace that helps you stay organized, manage 
 ``` JavaScript ```
 
 ## Screenshots 
-![alt text](assets/screen-shots/image.png)
-![alt text](assets/screen-shots/image1.png)
+![alt text](assets/screen-shots/image.jpg)
+![alt text](<assets/screen-shots/image 1.jpg>)
 
 
 ## How To Use It Locally
