@@ -312,59 +312,59 @@ const body = document.getElementById("body")
 
 
 theme1.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/breathtaking_green_cloudy_landscape.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/breathtaking_green_cloudy_landscape.jpg)"
 })
 
 theme2.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/california_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/california_hills.jpg)"
 })
 
 theme3.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/sunset_mountain.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/sunset_mountain.jpg)"
 })
 
 theme4.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/countryside_path.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/countryside_path.jpg)"
 })
 
 theme5.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/desert.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/desert.jpg)"
 })
 
 theme6.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/evening_green_mountains.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/evening_green_mountains.jpg)"
 })
 
 theme7.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/green_landscape.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/green_landscape.jpg)"
 })
 
 theme8.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/green_tree_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/green_tree_hills.jpg)"
 })
 
 theme9.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/night_moon.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/night_moon.jpg)"
 })
 
 theme10.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/night_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/night_hills.jpg)"
 })
 
 theme11.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/pink_cloudy_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/pink_cloudy_hills.jpg)"
 })
 
 theme12.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/cloudy.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/cloudy.jpg)"
 })
 
 theme13.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/tokyo_night.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/tokyo_night.jpg)"
 })
 
 theme14.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(assets/bg/tokyo_evening.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/tokyo_evening.jpg)"
 })
 
 const theme_btn = document.getElementById("theme_btn")
