@@ -1,7 +1,7 @@
 # Lokin
 Get set lock-in
 
-#Live Link: https://lokin-delta.vercel.app/
+# Live Link: https://lokin-delta.vercel.app/
 
 ## Overview
 Lokin is a beautiful and modern workspace that helps you stay organized, manage tasks, and lock in on your work. It includes a focus timer, task management, customizable themes, and a distraction-free cozy interface to help u focus on you work in a beautifull way.
