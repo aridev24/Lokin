@@ -312,59 +312,59 @@ const body = document.getElementById("body")
 
 
 theme1.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/breathtaking_green_cloudy_landscape.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/1.png)"
 })
 
 theme2.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/california_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/2.png)"
 })
 
 theme3.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/sunset_mountain.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/3.png)"
 })
 
 theme4.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/countryside_path.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/4.png)"
 })
 
 theme5.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/desert.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/5.png)"
 })
 
 theme6.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/evening_green_mountains.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/6.png)"
 })
 
 theme7.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/green_landscape.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/7.png)"
 })
 
 theme8.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/green_tree_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/8.png)"
 })
 
 theme9.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/night_moon.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/9.png)"
 })
 
 theme10.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/night_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/10.png)"
 })
 
 theme11.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/pink_cloudy_hills.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/11.png)"
 })
 
 theme12.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/cloudy.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/12.png)"
 })
 
 theme13.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/tokyo_night.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/13.png)"
 })
 
 theme14.addEventListener("click", function() {
-    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/tokyo_evening.jpg)"
+    body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg/14.png)"
 })
 
 const theme_btn = document.getElementById("theme_btn")
